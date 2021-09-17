@@ -4,7 +4,7 @@ let fetch = require('node-fetch')
 let handler  = async (m, { conn, args, usedPrefix, command }) => {
 	if (!args || !args[0]) return conn.reply(m.chat, `No es así!\n\n*tenes que poner* : _${usedPrefix + command} Hola_`, m)
 	let text = args.join` `
-	fetch("https://api.simsimi.net/v1/?text=" + encodeURIComponent(text) + "&lang=es")
+	fetch("https://api.simsimi.net/v2/?text=" + encodeURIComponent(text) + "&lang=es")
   .then(res => res.json())
   .then(batch => {
     conn.updatePresence(m.chat, Presence.composing)
