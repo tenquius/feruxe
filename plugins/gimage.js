@@ -18,6 +18,8 @@ ${text}
 handler.help = ['imagen <query>', 'image <query>']
 handler.tags = ['internet', 'tools']
 handler.command = /^(image|imagen)$/i
+handler.group = true
+handler.exp = 750
 
 module.exports = handler
 
