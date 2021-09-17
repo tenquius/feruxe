@@ -51,6 +51,7 @@ echo -e '\033[0m\033[1;31m
 \033[0m'
 apt-get install ffmpeg
 npm install fluent-ffmpeg
+npm install g-i-s
 pkg install pulseaudio
 pkg install sox
 pulse audio -D
